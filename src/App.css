@@ -1,38 +1,388 @@
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color:rgb(250, 250, 250);
+  overflow-y: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p  {
+  font-size: 10px;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#position {
+  text-align: left;
+  position: relative;
+}
+
+#margin {
+  margin-right: 39px;
+  margin-bottom: 10px;
+}
+
+#margin-2 {
+  margin-right: 10px;
+}
+
+header {
+  width: 100%;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+}
+
+header h1 {
+  text-align: center;
+  width: 50%;
+}
+
+header div {
+  align-self: center;
+  width: 25%;
+  height: 40px;
+}
+
+button {
+  border: none;
+}
+ /* Toggle switch box */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 22px;
+  top: 15px;
+}
+
+.slider-text {
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  /*right: 10px;*/
+  top: 15px;
+}
+
+/* Hide checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* the Slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  text-align: center;
+  height: 19px;
+  width: 21px;
+  left: 2px;
+  bottom: .5px;
+  background: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider{
+  background-color: #56A470; /*#2196F3;*/
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+
+table {
+  width: 80vw;
+  margin: 2vw 7.5vw;
+}
+
+.element:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+th {
+  width: 5vw;
+  font-size: 22px;
+}
+
+
+td {
+  border: black solid 1px;
+  text-align: center;
+  padding: 4.5px;
+  color: white;
+  position: relative;
+}
+
+#spacer {
+  height: 25px;
+}
+
+form button {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+.metal {
+  background-color:#53929A;
+}
+
+.alkali {
+  background-color: #796987;
+} 
+
+.alkaline {
+  background-color:#7B789B ;
+}
+
+.transition {
+  background-color: #538CB7;
+}
+
+.metalloid {
+  background-color: #598E6A;
+}
+
+.halogen {
+  background-color: #B87F47;
+}
+
+.noble {
+  background-color: #AC3547;
+}
+
+.lanthanoid {
+  background-color: #B67990;
+}
+
+.actinoid {
+  background-color: #C3476A;
+}
+
+.nonmetal {
+  background-color: rgb(189, 187, 70);
+}
+
+.blank {
+  border: none;
+  background-color:rgb(250, 250, 250);
+  opacity: 0;
+}
+
+#Tennessine {
+  background: linear-gradient(#B87F47, #53929A);
+}
+
+#Lawrencium {
+  background: linear-gradient(#C3476A, #538CB7);
+}
+
+.period {
+  border: none;
+  font-size: 22px;
+  padding-right: 2vw;
+  color: black;
+}
+
+.period2 {
+  border: none;
+  font-size: 22px;
+  padding-right: 2vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: 'Breaking-Bad';
+    src: url(./fonts/Breaking-Bad.otf); 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slow-transition {
+  transition: .5s;
 }
+
+.breaking-bad {                                               /*#256D2E*/
+  background: linear-gradient(135deg, #59B27C, #56A470, #256D2E,#1A4A16) !important;
+  border: 1px solid white;
+  color: white;
+  opacity: 1;
+  transition: .5s;
+}
+
+.breaking-back {
+  min-height: 100vh;
+  background: url("./images/breaking_background2.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white !important;
+  transition: 1s;
+}
+
+.h1 {
+  font-family: Breaking-Bad;
+  letter-spacing: 5px; 
+  font-size: 33px;
+}
+
+.h1 span {
+  text-transform: lowercase;
+}
+
+
+#element-div {
+  position: absolute;
+  background-color:rgba(0, 0, 0, .7);
+  width: 90%;
+  height: 75%;
+  top: 18.5%;
+  left: 5%;
+  z-index: 50;
+ /* position: relative;
+  padding-bottom: 25px;
+  width: 100%;
+  border: 1px solid black;*/
+}
+
+#element-header {
+  position: relative;
+  height: 75px;
+  top: 0;
+}
+
+#element-name {
+  color: white;
+}
+
+#close {
+  color: white;
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  cursor: pointer;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+.element-model {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  width: 32%;
+  color: white;
+  font-weight: bold;
+}
+
+.element-info {
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  width: 32%;
+  color: white;
+  text-transform: capitalize;
+}
+
+.element-info2 {
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  width: 32%;
+  color: white;
+}
+
+.element-info h3 {
+  position: relative;
+  left: 10%;
+}
+
+.element-info2 h3{
+  position: relative;
+  left: 14%;
+}
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 25px auto;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.circle p {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 95px;
+  left: 100px
+}
+
+.legend-hide {
+  display: none;
+}
+
+#legend {
+  table-layout: fixed;
+  width: 30%;
+  z-index: 10;
+  position: absolute;
+  left: 20%;
+  top: 16%;
+  opacity: 1;
+}
+
+#legend th {
+  text-align: center;
+}
+
+#legend td {
+  height: 50px;
+}
+
+.dark-text-mode {
+  color: black;  
+}
+
+
+

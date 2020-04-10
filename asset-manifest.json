@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/periodt/static/css/main.d73e6a02.chunk.css",
+    "main.js": "/periodt/static/js/main.963d69da.chunk.js",
+    "main.js.map": "/periodt/static/js/main.963d69da.chunk.js.map",
+    "runtime-main.js": "/periodt/static/js/runtime-main.37af3a8f.js",
+    "runtime-main.js.map": "/periodt/static/js/runtime-main.37af3a8f.js.map",
+    "static/js/2.114723ae.chunk.js": "/periodt/static/js/2.114723ae.chunk.js",
+    "static/js/2.114723ae.chunk.js.map": "/periodt/static/js/2.114723ae.chunk.js.map",
+    "index.html": "/periodt/index.html",
+    "precache-manifest.9e362bcd24493457afcabfcc3386293d.js": "/periodt/precache-manifest.9e362bcd24493457afcabfcc3386293d.js",
+    "service-worker.js": "/periodt/service-worker.js",
+    "static/css/main.d73e6a02.chunk.css.map": "/periodt/static/css/main.d73e6a02.chunk.css.map",
+    "static/js/2.114723ae.chunk.js.LICENSE.txt": "/periodt/static/js/2.114723ae.chunk.js.LICENSE.txt",
+    "static/media/Breaking-Bad.otf": "/periodt/static/media/Breaking-Bad.62fa13c8.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37af3a8f.js",
+    "static/js/2.114723ae.chunk.js",
+    "static/css/main.d73e6a02.chunk.css",
+    "static/js/main.963d69da.chunk.js"
+  ]
+}
